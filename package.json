@@ -1,0 +1,75 @@
+{
+  "name": "sync-bower",
+  "description": "Sync package.json with bower.json.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/sync-bower",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/sync-bower",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/sync-bower/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "main": "index.js",
+  "bin": {
+    "sync-bower": "bin/sync.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bower-store": "^0.1.0",
+    "composer": "^0.14.0",
+    "diff": "^3.2.0",
+    "extend-shallow": "^2.0.1",
+    "fs-exists-sync": "^0.1.0",
+    "lazy-cache": "^2.0.2",
+    "load-pkg": "^3.0.1",
+    "log-utils": "^0.2.1",
+    "minimist": "^1.2.0",
+    "normalize-pkg": "^0.4.1",
+    "object.omit": "^2.0.1",
+    "prompt-confirm": "^0.2.1",
+    "prompt-question": "^0.4.1",
+    "sync-pkg": "^0.7.2"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "bower",
+    "bower.json",
+    "package",
+    "package.json",
+    "sync",
+    "synchronize",
+    "update"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "gulp-normalize-pkg",
+        "normalize-pkg",
+        "sync-pkg"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
