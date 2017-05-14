@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-var argv = utils.minimist(process.argv.slice(2));
 var path = require('path');
 var sync = require('../');
 var utils = require('./utils');
@@ -9,6 +8,7 @@ var Question = require('prompt-question');
 var Composer = require('composer');
 var composer = new Composer();
 
+var argv = utils.minimist(process.argv.slice(2));
 var cwd = argv.cwd ? path.resolve(argv.cwd) : process.cwd();
 
 var tasks = argv._.length ? argv._ : argv.bower || argv.new;
